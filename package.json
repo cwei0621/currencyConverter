@@ -1,0 +1,27 @@
+{
+  "name": "currencyconverter",
+  "version": "1.0.0",
+  "description": "Implement an API that provides currency conversion. Round the converted amount to the second decimal place and format the converted amount to include comma separators as thousands separators, such as 123,456.78.",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npx mocha test/",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwei0621/currencyConverter.git"
+  },
+  "author": "wayne0621",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cwei0621/currencyConverter/issues"
+  },
+  "homepage": "https://github.com/cwei0621/currencyConverter#readme",
+  "devDependencies": {
+    "chai": "^4.3.8",
+    "mocha": "^10.2.0"
+  }
+}
