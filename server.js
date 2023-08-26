@@ -1,15 +1,9 @@
 const http = require('http');
 const url = require('url');
 const CurrencyConverter = require('./CurrencyConverter');
+const config = require('./config');
 
-const exchangeRates = {
-  USD: 1,
-  TWD: 30,
-  EUR: 0.85,
-  JPY: 150,
-};
-
-const converter = new CurrencyConverter(exchangeRates);
+const converter = new CurrencyConverter(config.exchangeRates);
 
 const server = http.createServer((req, res) => {
   const parsedUrl = url.parse(req.url, true);
@@ -34,8 +28,7 @@ const server = http.createServer((req, res) => {
   }
 });
 
-const port = 3000;
+const port = config.port || 3000;
 server.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
-

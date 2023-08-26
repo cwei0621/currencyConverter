@@ -7,7 +7,16 @@ Implement an API that provides currency conversion. Round the converted amount t
 ## Install
 - install node
     - https://nodejs.org/en/download
-
+- set config
+    ```js
+    port: 3000, // listen port
+    exchangeRates: { 
+        USD: 1,
+        TWD: 30,
+        EUR: 0.85,
+        JPY: 150,
+    },
+    ```
 ## Usage
 - run server.js
     ```bash
