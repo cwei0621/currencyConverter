@@ -17,6 +17,10 @@ Implement an API that provides currency conversion. Round the converted amount t
         JPY: 150,
     },
     ```
+- install packages
+    ```bash
+    npm install
+    ```
 ## Usage
 - run server.js
     ```bash
@@ -25,4 +29,8 @@ Implement an API that provides currency conversion. Round the converted amount t
 - call api
     ```bash
      curl 'localhost:3000?source=USD&target=JPY&amount=$10,525.5
+    ```
+- test
+    ```bash
+    npx mocha test/testCurrencyConverter.js
     ```
